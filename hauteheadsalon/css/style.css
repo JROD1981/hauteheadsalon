@@ -1,0 +1,597 @@
+/* Variables */
+
+:root {
+  --orange-color: #fdba11;
+  --green-color: #00a563;
+  --pink-color: #ed3696;
+  --blue-color: #0099c4;
+}
+
+@font-face {
+  font-family: "Picadilly";
+  src: url(../font/Picadilly.ttf) format("truetype");
+}
+
+body {
+  overflow-x: hidden;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+.heading-text {
+  font-size: 50px;
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.navbar .nav-link {
+  font-size: 15px;
+  text-transform: uppercase;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
+.bookNow {
+  border: 1px solid var(--blue-color);
+}
+
+.bookNow:hover {
+  border: 1px solid transparent;
+  color: lime;
+}
+
+.navbar-nav .nav-item .book-link:hover {
+  transition: 0.2s;
+  color: var(--pink-color);
+}
+
+.headtaglogo {
+  height: 3rem;
+  text-align: center;
+  margin-top: -30px;
+  font-size: 2rem;
+}
+
+.HH-brand {
+  font-family: "Picadilly", Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 200;
+}
+
+.carousel-item {
+  height: 88vh;
+}
+
+.carousel-image-1 {
+  /* background: no-repeat top/20% url("../img/hauteheadlanding.jpg"); */
+  background-color: #000;
+  background-position: center;
+  background-size: cover;
+}
+
+.hautehead_welcome {
+  letter-spacing: 3;
+}
+
+.carousel-image-2 {
+  /* background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../img/salonFull.jpg); */
+  /* background-image: url(../img/salonFull.jpg); */
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/salonHighView-mini.jpg) no-repeat center fixed;
+  background-size: cover;
+}
+
+.carousel-image-3 {
+  background: url("../img/springFling.jpg") no-repeat center center;
+  background-size: 100% 100%;
+}
+
+#showcase {
+  height: 60%;
+}
+
+#showcase.carousel .carousel-item,
+#showcase.carousel .carousel-item.active,
+#showcase.carousel .carousel-inner {
+  height: 100%;
+}
+
+#showcase.carousel .container {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.car-3 {
+  color: #000;
+  font-weight: 700;
+}
+
+.car-3__heading {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 480px) {
+  .carousel-item .display3 {
+    font-size: 4.5rem;
+  }
+  .carousel-item .car1-caption {
+    font-size: 3.5rem;
+  }
+  .HH-logo {
+    display: none;
+  }
+}
+
+/* Carousel 1 img & fonts */
+
+.HH {
+  font-family: "Picadilly", Arial, Helvetica, sans-serif;
+}
+
+.HH-logo {
+  height: 12rem;
+}
+
+#home-heading {
+  position: relative;
+  min-height: 150px;
+  /* background: url("../img/lights.jpg"); */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #fff;
+  transition: all 0.2s ease;
+}
+
+.page-title {
+  font-family: "Picadilly", Arial, sans-serif;
+  font-size: 4rem;
+  font-weight: 500;
+  color: var(--pink-color);
+  margin-top: 25px;
+}
+
+#page-header {
+  height: 30vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../img/salonHighView.jpg) no-repeat center fixed;
+  background-size: cover;
+  background-position-y: -425px;
+  border-bottom: 1px #eee solid;
+  padding-top: 50px;
+}
+
+@media screen and (max-width: 480px) {
+  #page-header {
+    height: 50vh;
+    background-position-y: -275px;
+  }
+  .page-title-work {
+    height: 20vh;
+    margin-top: 70px;
+  }
+  .page-title-contact {
+    height: 30vh;
+    margin-top: 90px;
+  }
+  .page-title-about {
+    height: 30vh;
+    margin-top: 90px;
+  }
+  .page-title-service {
+    height: 30vh;
+    margin-top: 90px;
+  }
+}
+
+/**************** HOME ICON SECTION *************** */
+
+#home-icons {
+  /* transition: all .3s ease; */
+}
+
+.home-icons {
+  transition: all 0.2s ease;
+  color: #000;
+  padding-top: 5px;
+}
+
+.home-icons:hover {
+  transform: scale(1.1) translateY(-0.5rem);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+  transition: all 0.4s ease;
+}
+
+.svgicon {
+  height: 60px;
+}
+
+.wave-lines {
+  transform: rotate(90deg);
+}
+
+.icon-scale {
+  color: #0099c4;
+}
+
+.icon-heading {
+  color: #000;
+  font-weight: 500;
+}
+
+.home-icons:hover .icon-heading {
+  color: var(--pink-color);
+  transition: all 0.4s ease;
+}
+
+.dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to right, #ed3696, #0099c4);
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+/**************** SERVICE SECTION *************** */
+
+/* ********** */
+
+.service-header {
+  background-color: #000;
+  color: #fff;
+}
+
+.service-bg {
+  background-image: url(../img/Screenshot_20180203-095928.jpg);
+  font-weight: 600;
+}
+
+.service-card__title {
+  font-size: 40px;
+}
+
+.service-area {
+  background: #333;
+}
+
+.service-title {
+  font-size: 30px;
+  font-weight: 500;
+  color: var(--pink-color);
+}
+
+#faq .card {
+  border: #000;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+#faq a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#faq .card-header {
+  background: #2b2b2b85;
+}
+
+#faq .card-body {
+  color: #333;
+}
+
+/**************** TEAM  SECTION *************** */
+
+/* ********** */
+
+#gallery {
+}
+
+.team-gallery {
+}
+
+.employee-card {
+  transition: all 2s ease;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 15px;
+  width: 33%;
+}
+
+.employee {
+  overflow: hidden;
+  transition: all 2s ease;
+}
+
+.employee-card:hover .employee,
+.employee-card:focus .employee {
+  transform: scale(1.1);
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  transition: all 0.3s ease;
+  width: 100%;
+  height: 40%;
+  opacity: 0;
+  background-color: transparent;
+}
+
+.employee-card:hover .overlay {
+  opacity: 1;
+}
+
+/* Change Employee info size here */
+
+.employee-info {
+  color: #fff;
+  position: absolute;
+  top: 70%;
+  left: 15%;
+  font-size: 16px;
+}
+
+.overlayLeft {
+  height: 100%;
+  width: 0;
+  top: 0;
+  left: 0;
+}
+
+.employee-card:hover .overlayLeft {
+  width: 100%;
+  transition: 0.3s;
+}
+
+.social {
+  text-align: center;
+  padding: 10px;
+  transition: all 0.8s ease;
+}
+
+.team-icon {
+  color: #fff;
+  margin-right: 30px;
+}
+
+.team-icon:hover {
+  color: var(--pink-color);
+  transition: all 0.5s ease;
+  transform: translateY(-5px);
+}
+
+@media screen and (max-width: 480px) {
+  #gallery {
+    display: flex;
+  }
+  .employee-card {
+    width: 90%;
+    height: 50vh;
+  }
+  .overlay {
+    opacity: 1;
+  }
+  .overlayLeft {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  .employee-info {
+    color: #fff;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  .team {
+    width: 0;
+    display: inline-block;
+    margin-right: 20px;
+  }
+}
+
+/* /////////////  ABOUT SECTION /////////////// */
+
+.ash-photo {
+  height: 30rem;
+  box-shadow: 0 5px 10px #000;
+}
+
+@media screen and (max-width: 480px) {
+  .ash-photo {
+    text-align: center;
+  }
+}
+
+/* ////////// */
+
+.bg-stylist {
+  background-image: linear-gradient(to right, #ed3696, #0099c4);
+}
+
+/* /////////////  FORM  /////////////// */
+
+/* ////////// */
+
+.contact-info {
+  border: 5px solid #ed3696;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
+}
+
+/* .contact-card {
+    height: 50vh;
+} */
+
+.contact-input {
+  font-family: inherit;
+}
+
+.contact-input:focus {
+  border: none;
+  outline: none;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid #0099c4;
+}
+
+.contact-label {
+}
+
+.contact-btn {
+  color: #ed3696;
+  background: #0099c4;
+  border: none;
+}
+
+.contact-btn:hover {
+  background-color: rgb(237, 54, 150);
+  color: #fff;
+}
+
+.contact-border {
+  border: none;
+  box-shadow: none;
+}
+
+.contact-border:hover {
+  box-shadow: 0 5px 5px rgb(237, 54, 150);
+}
+
+@media screen and (max-width: 480px) {
+  .contact-remove {
+    display: none;
+  }
+}
+
+/* **************** PRODUCT ************ */
+
+#newsletter {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.5)),
+    url(../img/prodBg-mini.jpg) no-repeat center fixed;
+  background-size: cover;
+}
+
+.productLogo1 {
+  text-align: center;
+  height: 125px;
+  width: 500px;
+}
+
+.productLogo2 {
+  text-align: center;
+  height: 125px;
+}
+
+.productName {
+  color: #000;
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 480px) {
+  .productLogo1 {
+    width: 100%;
+  }
+  .productLogo2 {
+    width: 100%;
+  }
+  .product-box {
+    margin-bottom: 20px;
+  }
+}
+
+/* ********* */
+
+#video-play {
+  position: relative;
+  min-height: 200px;
+  background: url("../img/media.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 0 -300px;
+  text-align: center;
+  color: #fff;
+}
+
+#video-play a {
+  color: #fff;
+}
+
+.about-img {
+  margin-top: -50px;
+  transform: rotate(90deg);
+  height: 300px;
+  width: auto;
+}
+
+/* /////////////FOOTER////////// */
+
+/* ////// */
+
+#main-footer {
+  background: #000;
+  color: #fff;
+}
+
+.footer-logo {
+  width: 30%;
+  margin-top: -10px;
+}
+
+.social-span {
+  text-decoration: none;
+  list-style-type: none;
+  color: #0099c4;
+}
+
+.social {
+  text-align: center;
+  padding: 10px;
+  transition: all 0.8s ease;
+}
+
+.icon {
+  color: #0099c4;
+}
+
+.icon:hover {
+  color: #f9a21e;
+  transition: all 0.5s ease;
+  transform: translateY(-5px);
+}
+
+.info-box {
+  padding: 5px;
+}
+
+.info-icon {
+  color: #ed3696;
+  padding: 5px;
+}
+
+.info-header {
+  color: #ddd;
+}
+
+.info-p {
+  color: #0099c4;
+}
+
+.info-phone {
+  color: #0099c4;
+}
+
+.info-phone:hover {
+  color: #ed3696;
+  text-decoration: none;
+  list-style: none;
+}
+
+.closed {
+  color: #ed3696;
+}
